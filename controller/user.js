@@ -2,7 +2,7 @@ const User = require("../model/user");
 
 module.exports = {
   addUser: (req, res) => {
-    const newUser = new user(req.body);
+    const newUser = new User(req.body);
     newUser.save((error, result) => {
       if (error) {
         res.status(400).send({
