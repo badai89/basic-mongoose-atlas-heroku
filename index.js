@@ -14,6 +14,8 @@ const port = PORT || 3000;
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get("/", (req, res, next) => res.send("Welcome stalker!"));
 app.use("/", userRouter );
 app.use("/alamatpost", addressRouter )
 
