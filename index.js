@@ -15,7 +15,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/", (req, res, next) => res.send("Welcome stalker!"));
+app.get("/", (req, res, next) => res.send("Still Practice!!"));
 app.use("/", userRouter );
 app.use("/alamatpost", addressRouter )
 
